@@ -125,7 +125,7 @@ describe("Testes da classe Utilitarios", () => {
     expect(util.mesclarObjetos(obj1, obj2)).toEqual({ a: 1, b: 2 });
   });
   
-  test("mesclarObjetos deve sobrescrever valores duplicados do segundo objeto", () => {
+  test("mesclarObjeto deve sobrescrever valores duplicados do segundo objeto", () => {
     const obj1 = { a: 1, b: 2 };
     const obj2 = { b: 3, c: 4 };
     expect(util.mesclarObjetos(obj1, obj2)).toEqual({ a: 1, b: 3, c: 4 });
